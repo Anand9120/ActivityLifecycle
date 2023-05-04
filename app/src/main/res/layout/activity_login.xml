@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/logo"
+    android:src="@drawable/avengers_logo"
+/>
+
+    <EditText
+        android:id="@+id/mob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_margin="20dp"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:background="@color/purple_200"
+        android:textColor="@color/purple_200"
+        android:hint="@string/mobile_number"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_700"
+        android:layout_below="@id/mob"
+        android:layout_margin="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@color/purple_200"
+        android:maxLength="10"
+        android:maxLines="1"
+
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_500"
+        android:padding="6dp"
+        android:text="LOG IN"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="16sp"
+        android:id="@+id/txtfp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn3"
+        android:padding="6dp"
+        android:textColor="@color/purple_500"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Yourself"
+        android:textSize="16sp"
+        android:id="@+id/txtry"
+        android:padding="6dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

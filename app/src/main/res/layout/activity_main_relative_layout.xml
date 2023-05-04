@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:padding="10dp"
+        android:text="ANDROID DEVELOPMENT WITH INTERNSHALA"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt1"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:text="ANDROID IS FUN"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:src="@drawable/avengers_logo"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Click Here"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/material_dynamic_neutral95"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_margin="20dp"
+        android:hint="Enter Your Name"
+        android:textColor="@color/cardview_dark_background"
+        android:inputType="text"/>
+
+</RelativeLayout>
